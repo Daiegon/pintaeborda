@@ -1,0 +1,26 @@
+{
+  "name": "pintaeborda",
+  "description": "Site Pinta e Borda Camisas e Uniformes",
+  "main": "gulpfile.js",
+  "authors": [
+    "Diego Rangel"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Daiegon/pintaeborda",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery-breakpoint-check": "~1.0.1"
+  },
+  "dependencies": {
+    "bootstrap-css": "~3.3.6",
+    "jquery": "~2.2.0"
+  }
+}
