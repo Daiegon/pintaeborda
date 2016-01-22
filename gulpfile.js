@@ -72,7 +72,7 @@ var args = require('yargs')
 
 	// MAIN
 	gulp.task('scripts:main', function() {
-		return gulp.src('./sources/js/*.js')
+		return gulp.src('./sources/js/**/*.js')
 	    .pipe(concat('app.js'))
 	    .pipe(gulpif(isProduction, uglify()))
 	    .pipe(gulp.dest('./_build/sources/js'))
@@ -120,7 +120,13 @@ var args = require('yargs')
 	    .pipe(gulp.dest('./_build/sources/fonts'))
 	});
 
-	gulp.task('copy', ['copy:images', 'copy:fonts']);
+	// PHP
+	gulp.task('copy:php', function () {
+	    return gulp.src('./sources/php/*.{php,txt}')
+	        .pipe(gulp.dest('./_build/sources/php'));
+	});
+
+	gulp.task('copy', ['copy:images', 'copy:fonts', 'copy:php']);
 
 
 // -- HMTL

@@ -1,0 +1,144 @@
+// VARIAVEIS
+@principal: #1723c9;
+@secundaria: #8FC855;
+@contraste: #ff7800; 
+  
+body{
+	background: url('../images/cesta.jpg') no-repeat center 60px;
+	background-size: auto 350px;
+
+	font-size: 100%;
+
+	color: #fff;
+
+	font-size: 1em;
+
+	&.obrigado{
+		background-image: none;
+		//background-color: @principal;
+
+		#main{
+			padding-top: 0 !important;
+		}
+	}
+}
+
+
+#content{
+	position: relative;
+
+	.fixo{
+		position: absolute;
+		top: 300px;
+		z-index: 999;
+	}
+
+	#main{
+		//padding-top: 250px;
+		min-height: 300px;
+		color: @principal;
+
+		.titulo{
+			margin: 0 0 30px 0;
+			h1{
+				margin: 0;
+				font-weight: bolder;
+			}
+			h2{
+				color: @contraste;
+			}
+			span{
+				font-size: 2em;
+			}
+			p{
+				font-size: 2em;
+			}
+		}
+
+	}
+
+	footer{
+		padding: 15px 0 50px 0;
+		color: @principal;
+		font-size: 1.5em;
+	}
+}
+
+.compartilha{
+	padding: 20px 0;
+	font-size: 2em;
+	span{
+		display: block;
+		font-size: 3em;
+	}
+}
+
+hr{
+	border-top: 1px solid @principal;
+	&.hr2{
+		border-top: 3px solid @contraste;
+	}
+}
+
+.link{
+	padding: 30px;
+	display: block;
+	font-size: 2em;
+}
+
+.descricao{
+	font-size: 4.5em;
+	&.dark{
+		color: #000;
+	}
+}
+
+.destaca{
+	color: @contraste;
+	text-transform: uppercase;	
+}
+
+.formulario{
+	font-size: 1.5em;
+	border-top: 1px dashed @principal; 
+	padding: 15px 0 0 0;
+	input{
+		padding: 30px 15px;
+		font-size: 1.8em;
+	}
+	.form-group{
+		margin-bottom: 20px;
+	}
+	label{
+		text-transform: uppercase;
+	}
+	.load{
+		display: none;
+	}
+	p.privacidade{
+		clear: both;
+		margin: 40px 0 30px 0;
+		padding: 15px 0 0 0;
+		border-top: 1px dashed @principal; 
+		text-align: justify; 
+	}
+}
+
+.help-block{
+	li{
+		list-style: none;
+		padding: 10px 5px;
+	}
+	&.text-danger{
+		background-color: #ea6767;
+		color: #6b0505;
+		font-weight: bolder;
+	}
+}
+
+.seta-down{
+	width: 100%;
+	text-align: center;
+	font-size: 5em;
+	color: @contraste;
+}	
